@@ -13,40 +13,47 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-  font-size: 20px;
+      font-size: 20px;
     }
-    
+
     .card {
       background: white;
       padding: 50px 40px;
       border-radius: 16px;
       width: 92%;
-      max-width: 600px;
-      text-align: center;
+      max-width: 650px;
+      text-align: left;
       box-shadow: 0 12px 30px rgba(0,0,0,0.10);
     }
-    
+
     h2 {
-      margin-bottom: 18px;
-      font-size: 30px;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
-    
+
+    h3 {
+      font-size: 22px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
     p {
       color: #444;
       line-height: 1.7;
-      font-size: 20px;
+      font-size: 18px;
     }
-    
+
     .note {
-      font-size: 15px;
+      font-size: 14px;
       color: #888;
       margin-top: 20px;
+      line-height: 1.5;
     }
-    
+
     .btn {
       display: inline-block;
-      margin-top: 25px;
-      padding: 18px 30px;
+      margin-top: 12px;
+      padding: 16px 26px;
       background: #7CFC98;
       color: #0b3d1f;
       text-decoration: none;
@@ -54,11 +61,21 @@
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(124, 252, 152, 0.4);
       transition: 0.2s ease;
-      font-size: 20px;
+      font-size: 18px;
     }
-    
+
     .btn:hover {
       transform: scale(1.05);
+    }
+
+    .section {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .highlight {
+      font-weight: bold;
     }
   </style>
 </head>
@@ -67,20 +84,46 @@
 
   <div class="card">
 
-    <h2>Para continuar</h2>
+    <!-- SECTION 1 -->
+    <div class="section">
+      <h2>Enviar seu vídeo</h2>
 
-    <p>
-      Se abrir dentro do Instagram, toque nos <b>3 pontos</b> e escolha: <br>
-      <b>Abrir no navegador</b>
-    </p>
+      <p>
+        Envie seu vídeo para o e-mail <b>betadelasbrasil@gmail.com</b> ou via DM no Instagram em alta resolução.
+      </p>
 
-    <a class="btn" href="https://script.google.com/macros/s/AKfycbw1fGWk9WCQx-cp7TNaw9teNhA5ipZCXnXWTOUNcH0PtziPylx-XQRBCxkeDFLaE5ft/exec">
-      Continuar
-    </a>
+      <p>
+        Inclua também suas informações físicas:
+        <b>altura</b> e <b>envergadura</b>.
+      </p>
+    </div>
 
-    <div class="note">
-      Observação: Este app foi criado através do Google Apps Script. O navegador interno do Instagram pode limitar algumas funcionalidades.
-      Caso esteja no desktop ou no navegador padrão, clique em Continuar.
+    <!-- SECTION 2 -->
+    <div class="section">
+      <h2>Lista de vídeos</h2>
+
+      <p>
+        Acesse abaixo a lista completa de vídeos enviados e organizados na plataforma.
+      </p>
+
+      <a class="btn" href="https://script.google.com/macros/s/AKfycbw1fGWk9WCQx-cp7TNaw9teNhA5ipZCXnXWTOUNcH0PtziPylx-XQRBCxkeDFLaE5ft/exec">
+        Acessar lista
+      </a>
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+      <h2>Como acessar pelo Instagram</h2>
+
+      <p>
+        Se a página abrir dentro do Instagram, toque nos <b>3 pontos</b> no canto superior e selecione:
+        <b>Abrir no navegador</b>.
+      </p>
+
+      <p class="note">
+        Observação: Este app foi criado através do Google Apps Script. O navegador interno do Instagram pode limitar algumas funcionalidades.
+        Caso esteja no desktop ou no navegador padrão, o acesso funciona normalmente ao clicar em <b>Acessar lista</b>.
+      </p>
     </div>
 
   </div>
