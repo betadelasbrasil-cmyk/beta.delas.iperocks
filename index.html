@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Abrir link</title>
-  </head>
-  <body style="font-family: Arial; text-align:center; padding-top:50px;">
+<head>
+  <meta charset="utf-8">
+  <title>Abrir link</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 14px;
+      width: 90%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .note {
+      font-size: 12px;
+      color: #888;
+      margin-top: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 22px;
+      background: #7CFC98; /* verde claro */
+      color: #0b3d1f;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(124, 252, 152, 0.4);
+      transition: 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
 
     <h2>Para continuar</h2>
 
     <p>
-      Se abrir dentro do Instagram, toque nos <b>3 pontos</b> e escolha:
-      <br><b>Abrir no navegador</b>
+      Se abrir dentro do Instagram, toque nos <b>3 pontos</b> e escolha:<br>
+      <b>Abrir no navegador</b>
     </p>
 
-     <p>
-        Observação: Este app foi criado através do Apps Script do Google. O navegador interno do Instgram limita a sua execução.
-      </p>
-
-    <a href="https://script.google.com/macros/s/AKfycbzOZzYbS1xkkrdKhEuwTd3crYLKChWBB9QYPNMmQHcwkskpsp2zOZbN3kf-i5uAlRcD/exec">
-      <button style="padding:12px 20px; font-size:16px; margin-top:20px;">
-        Continuar
-      </button>
+    <a class="btn" href="https://script.google.com/macros/s/AKfycbzOZzYbS1xkkrdKhEuwTd3crYLKChWBB9QYPNMmQHcwkskpsp2zOZbN3kf-i5uAlRcD/exec">
+      Continuar
     </a>
 
-  </body>
+    <div class="note">
+      Observação: Este app foi criado através do Google Apps Script. O navegador interno do Instagram pode limitar algumas funcionalidades.
+    </div>
+
+  </div>
+
+</body>
 </html>
